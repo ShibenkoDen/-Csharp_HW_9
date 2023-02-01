@@ -14,16 +14,16 @@ int GetFromUserData(string message)
     return data;
 }
 
-void PrintRange (int number)
+void PrintRange(int number)
 {
     if (number == 0)
     {
         return;
     }
-    Console.Write (number+ ",");
-    PrintRange (number-1);
+    Console.Write(number + ",");
+    PrintRange(number - 1);
 }
 
-int N = GetFromUserData ("Введите число N: ");
-PrintRange (N);
+int N = GetFromUserData("Введите число N: ");
+PrintRange(N);
 Console.WriteLine();

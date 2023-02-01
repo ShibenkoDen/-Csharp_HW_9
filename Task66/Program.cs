@@ -20,10 +20,10 @@ int GetSumOfRange(int start, int end)
     {
         return start;
     }
-    return start+ GetSumOfRange(start+1, end);
+    return start + GetSumOfRange(start + 1, end);
 }
 
 int M = GetFromUserData("Введите начало ряда: ");
 int N = GetFromUserData("Введите конец ряда: ");
-int res = GetSumOfRange(M,N);
+int res = GetSumOfRange(M, N);
 Console.WriteLine($"Сумма элементов от {M} до {N} равна {res}");
